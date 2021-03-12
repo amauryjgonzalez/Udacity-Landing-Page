@@ -106,18 +106,18 @@ function navScrollEffect() {
         const sect3 = document.querySelector('#section3');
         const sect4 = document.querySelector('#section4');
 
-        if (sect1.getBoundingClientRect().top < navClient.getBoundingClientRect().bottom && sect2.getBoundingClientRect().top > window.innerHeight) {
+        if (sect1.getBoundingClientRect().top < navClient.getBoundingClientRect().bottom && sect2.getBoundingClientRect().bottom > window.innerHeight){
             button[0].classList.add('scroll');
             button[1].classList.remove('scroll', 'active');
             button[2].classList.remove('scroll', 'active');
             button[3].classList.remove('scroll', 'active');
-        } else if (sect2.getBoundingClientRect().top < navClient.getBoundingClientRect().bottom && sect3.getBoundingClientRect().top > window.innerHeight) {
+        } else if (sect2.getBoundingClientRect().top < navClient.getBoundingClientRect().bottom && sect3.getBoundingClientRect().bottom > window.innerHeight) {
             button[1].classList.add('scroll');
             button[0].classList.remove('scroll', 'active');
             button[2].classList.remove('scroll', 'active');
             button[3].classList.remove('scroll', 'active');
 
-        } else if (sect3.getBoundingClientRect().top < navClient.getBoundingClientRect().bottom && sect4.getBoundingClientRect().top > window.innerHeight) {
+        } else if (sect3.getBoundingClientRect().top < navClient.getBoundingClientRect().bottom && sect4.getBoundingClientRect().bottom > window.innerHeight) {
             button[2].classList.add('scroll');
             button[3].classList.remove('scroll', 'active');
             button[1].classList.remove('scroll', 'active');
